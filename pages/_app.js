@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${outfit.variable} ${montserrat.variable}`}>
+    <main className={`${outfit.variable} ${montserrat.variable} bg-[#F5F5F5]`}>
       <Component {...pageProps} />
     </main>
   );
