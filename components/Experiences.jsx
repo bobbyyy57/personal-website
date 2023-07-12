@@ -43,29 +43,40 @@ const faqs = [
 const Question = ({ index, question, answer }) => {
   const [toggle, setToggle] = useState(false);
 
+  const borderStyle = toggle
+    ? "border-x border-t border-orange-500 border-b-none"
+    : "border border-red-500";
+
+  const handleBodyClick = (e) => {
+    console.log("clicked");
+  };
+
   return (
     <Col className="pb-2 !m-0 w-full">
       <Accordion.Item
-        className={"!border-none !p-0 underlayColor=transparent"}
+        className="!border-none !p-0 underlayColor=transparent"
         eventKey={index}
       >
         <Accordion.Button
           onClick={() => setToggle(!toggle)}
-          className="!bg-bob-background border rounded text-black after:hidden p-0 focus:!shadow-none"
+          className="!bg-bob-background text-black after:hidden p-0 focus:!shadow-none"
         >
-          <div className=" w-full flex justify-between items-center p-3">
-            <p className="text-black text-sm m-0 ">{question}</p>
-            <div className="text-xl m-2 ">
+          <div
+            className={`w-full flex justify-between items-center p-3 ${borderStyle}`}
+          >
+            <p className="text-black text-sm m-0">{question}</p>
+            <div className="text-xl m-2">
               {toggle ? <FaMinus /> : <FaPlus />}
             </div>
           </div>
         </Accordion.Button>
 
         <Accordion.Body
-          className="!bg-bob-background flex justify-left items-center border"
+          className="!bg-bob-background  flex justify-left items-center border-x border-b border-pink-600"
           eventKey={index}
+          onClick={handleBodyClick}
         >
-          <p className=" text-black text-sm p-3 ">{answer}</p>
+          <p className="text-black text-sm p-3">{answer}</p>
         </Accordion.Body>
       </Accordion.Item>
     </Col>
@@ -87,10 +98,10 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <Row className="w-full">
+        <Row className="w-full ">
           <Col className="m-0 p-0 w-full">
             <div className="flex justify-center">
-              <Row className="w-full flex m-0 p-0">
+              <Row className="w-full flex m-0 p-0 ">
                 <Accordion
                   className="w-full !p-0"
                   defaultActiveKey="0"
