@@ -23,7 +23,7 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
           <div className="font-outfit font-extralight text-bob-borderGray text-xs">
             {description}
           </div>
-          <div className="flex text-xl space-x-[2%] pt-4">
+          <div className="flex text-xl space-x-2 pt-4">
             <BsGithub />
             <FaFigma />
             <PiRocketLaunch />

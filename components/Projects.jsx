@@ -1,6 +1,8 @@
 import React from "react";
 import RParts from "../public/rparts.png";
 import RPartsLogo from "../public/rpartsLogo.png";
+import beatdropLogo from "../public/beatdropLogo.png";
+import novoLogo from "../public/novoLogo.png";
 import ProjectLeft from "./ProjectLeft";
 import ProjectRight from "./ProjectRight";
 
@@ -20,7 +22,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full space-y-[3%]">
+          <div className="flex flex-col w-full space-y-[5%]">
             <ProjectLeft
               logo={RPartsLogo}
               screenshot={RParts}
@@ -30,7 +32,15 @@ const Projects = () => {
                     projects made f"
             />
             <ProjectRight
-              logo={RPartsLogo}
+              logo={beatdropLogo}
+              screenshot={RParts}
+              description="a few fun projects made fra few fun projects made fn
+                    projects made era few fun projects made f a few fun projects
+                    made fra few fun projects made fn projects made era few fun
+                    projects made f"
+            />
+            <ProjectLeft
+              logo={novoLogo}
               screenshot={RParts}
               description="a few fun projects made fra few fun projects made fn
                     projects made era few fun projects made f a few fun projects
