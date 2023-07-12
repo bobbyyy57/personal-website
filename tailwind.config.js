@@ -10,6 +10,13 @@ module.exports = {
         outfit: ["var(--font-outfit)", "sans-serif"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
+      colors: {
+        bob: {
+          boldGray: "#767676",
+          borderGray: "#AEAEAE",
+          orange: "#FF9900",
+        },
+      },
     },
   },
   plugins: [],
