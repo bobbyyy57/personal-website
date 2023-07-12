@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import Face from "../public/introFace.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Intro = () => {
   const text = [
@@ -60,9 +61,12 @@ const Intro = () => {
           <div className="space-y-6 font-extralight font-outfit text-sm">
             <div className="whitespace-pre-line">{typedText}</div>
           </div>
-          <button className="pt-[15%] duration-300 hover:-translate-y-1">
+          <Link
+            href="/home"
+            className="pt-[15%] duration-300 hover:-translate-y-1"
+          >
             <HiOutlineArrowRight />
-          </button>
+          </Link>
         </div>
       </div>
     </>
