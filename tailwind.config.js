@@ -15,6 +15,7 @@ module.exports = {
           boldGray: "#767676",
           borderGray: "#AEAEAE",
           orange: "#FF9900",
+          background: "#F5F5F5",
         },
       },
     },
