@@ -63,7 +63,7 @@ const Intro = () => {
           </div>
           <Link
             href="/home"
-            className="pt-[15%] duration-300 hover:-translate-y-1"
+            className="pt-[15%] duration-300 hover:-translate-y-1 text-black"
           >
             <HiOutlineArrowRight />
           </Link>

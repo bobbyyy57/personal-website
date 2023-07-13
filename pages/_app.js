@@ -1,6 +1,6 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 /* eslint-disable new-cap */
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Outfit, Montserrat } from "next/font/google";
 
 const outfit = Outfit({
@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return (
     <main
-      className={`${outfit.variable} ${montserrat.variable} bg-[#F5F5F5] h-full`}
+      className={`${outfit.variable} ${montserrat.variable} bg-bob-background h-full`}
     >
       <Component {...pageProps} />
     </main>
