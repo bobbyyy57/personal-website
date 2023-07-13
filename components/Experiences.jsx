@@ -6,7 +6,7 @@ import { PiCaretRightThin, PiCaretDownThin } from "react-icons/pi";
 // import { FaMinus } from "react-icons/fa";
 import Image from "next/image";
 
-const faqs = [
+const info = [
   {
     logo: "/ablogo.png",
     company: "ANHEUSER-BUSCH",
@@ -36,7 +36,15 @@ const faqs = [
   },
 ];
 
-const Question = ({ index, logo, company, role, date, tech, description }) => {
+const Experience = ({
+  index,
+  logo,
+  company,
+  role,
+  date,
+  tech,
+  description,
+}) => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -125,7 +133,7 @@ const Question = ({ index, logo, company, role, date, tech, description }) => {
   );
 };
 
-const FAQ = () => {
+const Experiences = () => {
   return (
     <div className="flex flex-col justify-center items-center pb-[20%]">
       <div className="flex flex-col justify-center items-center w-6/12">
@@ -149,14 +157,14 @@ const FAQ = () => {
                   defaultActiveKey="0"
                   alwaysOpen
                 >
-                  {faqs.map((question, index) => (
-                    <Question
-                      logo={question.logo}
-                      company={question.company}
-                      role={question.role}
-                      date={question.date}
-                      description={question.description}
-                      tech={question.tech}
+                  {info.map((exp, index) => (
+                    <Experience
+                      logo={exp.logo}
+                      company={exp.company}
+                      role={exp.role}
+                      date={exp.date}
+                      description={exp.description}
+                      tech={exp.tech}
                       index={index}
                       key={index}
                     />
@@ -171,4 +179,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Experiences;
