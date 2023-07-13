@@ -1,3 +1,4 @@
+import AboutMe from "../components/AboutMe";
 import Experiences from "../components/Experiences";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
@@ -13,6 +14,7 @@ export default function Home() {
         </div>
         <Projects />
         <Experiences />
+        <AboutMe />
       </div>
     </>
   );

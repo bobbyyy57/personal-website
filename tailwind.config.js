@@ -18,6 +18,9 @@ module.exports = {
           background: "#F5F5F5",
         },
       },
+      aspectRatio: {
+        picture: "12/10",
+      },
     },
   },
   plugins: [],
