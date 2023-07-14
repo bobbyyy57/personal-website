@@ -3,11 +3,12 @@ import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
 import { PiRocketLaunch } from "react-icons/pi";
+import Link from "next/link";
 
-const ProjectLeft = ({ logo, description, screenshot }) => {
+const ProjectLeft = ({ logo, description, screenshot, github, figma, dev }) => {
   return (
     <div className="flex space-x-[2%]">
-      <div className="w-1/2 border rounded-tl-xl rounded-bl-xl flex flex-col justify-center items-center">
+      <div className="w-1/2 border rounded-l-xl flex flex-col justify-center items-center">
         <div className="px-[8%] space-y-[2%] flex flex-col items-end justify-end">
           <div className="w-5/12">
             <Image src={logo} alt="Landing" layout="responsive" className="" />
@@ -15,10 +16,18 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
           <div className="font-outfit font-extralight text-bob-borderGray text-xs text-right">
             {description}
           </div>
-          <div className="flex text-xl space-x-2 pt-4">
-            <BsGithub className="duration-300 hover:-translate-y-1" />
-            <FaFigma className="duration-300 hover:-translate-y-1" />
-            <PiRocketLaunch className="duration-300 hover:-translate-y-1" />
+          <div className="flex text-xl space-x-2 pt-4 ">
+            <Link href={github}>
+              <BsGithub className="duration-300 hover:-translate-y-1 text-black" />
+            </Link>
+            <Link href={figma}>
+              <FaFigma className="duration-300 hover:-translate-y-1 text-black" />
+            </Link>
+            {dev !== "" && (
+              <Link href={dev}>
+                <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" />
+              </Link>
+            )}
           </div>
         </div>
       </div>
@@ -27,7 +36,7 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
           src={screenshot}
           alt="Landing"
           layout="responsive"
-          className=""
+          className="rounded-r-xl"
         />
       </div>
     </div>

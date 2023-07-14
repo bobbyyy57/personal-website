@@ -6,8 +6,8 @@ const Landing = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center  w-6/12 space-y-[3%]">
           <div className="grid grid-cols-9">
-            <div className="col-start-1 col-end-5 text-9xl font-outfit font-medium -tracking-[0.08em] -space-y-6 text-bob-orange">
-              <div>BOBBY</div>
+            <div className="col-start-1 col-end-5 text-9xl font-outfit font-medium -tracking-[0.08em] -space-y-6 text-black ">
+              <div className="hover:text-bob-orange duration-300">BOBBY</div>
               <div>LERIAS</div>
             </div>
             <div className="col-start-6 col-end-10 border-l-[1px]">

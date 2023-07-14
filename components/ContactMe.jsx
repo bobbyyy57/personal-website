@@ -7,11 +7,14 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const ContactMe = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-6/12">
+      <div
+        id="contact"
+        className="flex flex-col justify-center items-center w-6/12"
+      >
         <div className="flex flex-col justify-center items-center">
           <div className="flex justify-between items-center w-full pb-[5%]">
             <div className="w-5/12">
-              <div className="font-montserrat font-medium text-bob-boldGray text-lg">
+              <div className="font-montserrat font-medium text-black text-lg">
                 CONTACT ME
               </div>
               <div className="font-outfit font-extralight text-bob-borderGray text-xs">

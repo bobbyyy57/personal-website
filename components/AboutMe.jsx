@@ -6,11 +6,11 @@ import Cutie from "../public/cutie.png";
 const AboutMe = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
+      <div id="about" className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-6/12">
           <div className="w-full pb-[5%]">
             <div className="w-5/12">
-              <div className="font-montserrat font-medium text-bob-boldGray text-lg">
+              <div className="font-montserrat font-medium text-black text-lg">
                 ABOUT ME
               </div>
               <div className="font-outfit font-extralight text-bob-borderGray text-xs">
@@ -41,7 +41,7 @@ const AboutMe = () => {
                 <div className="col-span-7">
                   <div className="grid grid-rows-7 h-full">
                     <div className="row-span-3 flex">
-                      <div className="rounded-2xl border w-7/12 p-4 mr-2">
+                      <div className="rounded-2xl border w-6/12 p-4 mr-2">
                         <div className="text-xs font-outfit">
                           UNIVERSITY OF CALIFORNIA, RIVERSIDE
                         </div>

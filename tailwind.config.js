@@ -13,13 +13,13 @@ module.exports = {
       colors: {
         bob: {
           boldGray: "#767676",
-          borderGray: "#AEAEAE",
+          borderGray: "#767676",
           orange: "#FF9900",
           background: "#F5F5F5",
         },
       },
       aspectRatio: {
-        picture: "12/10",
+        picture: "4/3",
       },
     },
   },
