@@ -136,7 +136,7 @@ const Experience = ({
 const Experiences = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center w-6/12">
+      <div className="flex flex-col justify-center items-center">
         <div className="w-full pb-[5%]">
           <div className="w-5/12">
             <div className="font-montserrat font-medium text-bob-boldGray text-lg">

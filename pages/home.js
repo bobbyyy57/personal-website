@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="space-y-[7%]">
-        <div className="mt-[6%]">
-          <Landing />
+      <div className=" flex flex-col justify-center items-center">
+        <div className="space-y-[7%] w-6/12 flex justify-center flex-col items-center">
+          <div className="mt-[6%]">
+            <Landing />
+          </div>
+          <Projects />
+          <Experiences />
+          <AboutMe />
         </div>
-        <Projects />
-        <Experiences />
-        <AboutMe />
       </div>
     </>
   );

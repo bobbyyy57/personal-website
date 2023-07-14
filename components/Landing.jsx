@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <div>
       <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center w-6/12 space-y-[3%]">
+        <div className="flex flex-col justify-center items-center space-y-[3%]">
           <div className="grid grid-cols-9">
             <div className="col-start-1 col-end-5 text-9xl font-outfit font-medium -tracking-[0.08em] -space-y-6 text-bob-orange">
               <div>BOBBY</div>
