@@ -158,6 +158,12 @@ const Experience = ({
 };
 
 const Experiences = () => {
+  const [activeKey, setActiveKey] = useState("0");
+
+  const handleAccordionToggle = (index) => {
+    setActiveKey((prevKey) => (prevKey === index ? null : index));
+  };
+
   return (
     <div
       id="experiences"
@@ -180,9 +186,12 @@ const Experiences = () => {
             <div className="flex justify-center">
               <Row className="w-full flex m-0 p-0 ">
                 <Accordion
+                  // className="w-full !p-0"
+                  // defaultActiveKey="0"
+                  // alwaysOpen
                   className="w-full !p-0"
-                  defaultActiveKey="0"
-                  alwaysOpen
+                  activeKey={activeKey}
+                  onSelect={handleAccordionToggle}
                 >
                   {info.map((exp, index) => (
                     <Experience
@@ -194,7 +203,7 @@ const Experiences = () => {
                       tech={exp.tech}
                       attachment={exp.attachment}
                       attachment2={exp.attachment2}
-                      index={index}
+                      index={index.toString()}
                       key={index}
                     />
                   ))}

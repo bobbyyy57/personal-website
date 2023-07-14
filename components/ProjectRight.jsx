@@ -17,14 +17,14 @@ const ProjectLeft = ({ logo, description, screenshot, github, figma, dev }) => {
             {description}
           </div>
           <div className="flex text-xl space-x-2 pt-4 ">
-            <Link href={github}>
+            <Link target="_blank" href={github}>
               <BsGithub className="duration-300 hover:-translate-y-1 text-black" />
             </Link>
-            <Link href={figma}>
+            <Link target="_blank" href={figma}>
               <FaFigma className="duration-300 hover:-translate-y-1 text-black" />
             </Link>
             {dev !== "" && (
-              <Link href={dev}>
+              <Link target="_blank" href={dev}>
                 <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" />
               </Link>
             )}

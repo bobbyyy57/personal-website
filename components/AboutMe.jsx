@@ -31,8 +31,8 @@ const AboutMe = () => {
                     className="aspect-square rounded-2xl"
                   />
                 </div>
-                <div className="col-span-8 border rounded-2xl w-full">
-                  <div className="p-4 font-outfit ">adsfadfasd</div>
+                <div className="col-span-8 border rounded-2xl w-full mb-2">
+                  <div className="p-4 font-outfit">adsfadfasd</div>
                 </div>
               </div>
             </div>
@@ -41,12 +41,19 @@ const AboutMe = () => {
                 <div className="col-span-7">
                   <div className="grid grid-rows-7 h-full">
                     <div className="row-span-3 flex">
-                      <div className="rounded-2xl border w-6/12 p-4 mr-2">
-                        <div className="text-xs font-outfit">
+                      <div className="flex flex-col justify-center items-start rounded-2xl border w-8/12 p-4 mr-2 ">
+                        <div className="text-xs font-outfit ">
                           UNIVERSITY OF CALIFORNIA, RIVERSIDE
                         </div>
+                        <div className="text-xs font-outfit ">
+                          B.S. COMPUTER SCIENCE
+                        </div>
+                        <div className="text-xs font-outfit ">CUM LAUDE</div>
+                        <div className="text-xs font-outfit mt-2">
+                          2019-2023
+                        </div>
                       </div>
-                      <div className="flex items-center w-5/12 mt-2">
+                      <div className="flex items-center w-4/12  mt-2">
                         <Image
                           src={Cutie}
                           alt="Landing"
@@ -65,9 +72,8 @@ const AboutMe = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-5 rounded-2xl bg-red-500 mt-2 ml-2">
+                <div className="col-span-5 rounded-2xl bg-red-500  ml-2">
                   <iframe
-                    // style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/7AilqvU8xj4h6Zn5ti9JZt?utm_source=generator&theme=0"
                     width="100%"
                     height="352"
