@@ -12,10 +12,10 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
           src={screenshot}
           alt="Landing"
           layout="responsive"
-          className=""
+          className="rounded-l-xl"
         />
       </div>
-      <div className="w-1/2 border rounded-tr-xl rounded-br-xl flex flex-col justify-center items-center">
+      <div className="w-1/2 border rounded-r-xl flex flex-col justify-center items-center">
         <div className="px-[8%] space-y-[2%]">
           <div className="w-5/12">
             <Image src={logo} alt="Landing" layout="responsive" className="" />

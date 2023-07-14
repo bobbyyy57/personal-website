@@ -7,7 +7,7 @@ import { PiRocketLaunch } from "react-icons/pi";
 const ProjectLeft = ({ logo, description, screenshot }) => {
   return (
     <div className="flex space-x-[2%]">
-      <div className="w-1/2 border rounded-tl-xl rounded-bl-xl flex flex-col justify-center items-center">
+      <div className="w-1/2 border rounded-l-xl flex flex-col justify-center items-center">
         <div className="px-[8%] space-y-[2%] flex flex-col items-end justify-end">
           <div className="w-5/12">
             <Image src={logo} alt="Landing" layout="responsive" className="" />
@@ -27,7 +27,7 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
           src={screenshot}
           alt="Landing"
           layout="responsive"
-          className=""
+          className="rounded-r-xl"
         />
       </div>
     </div>
