@@ -24,9 +24,9 @@ const ProjectLeft = ({ logo, description, screenshot }) => {
             {description}
           </div>
           <div className="flex text-xl space-x-2 pt-4">
-            <BsGithub />
-            <FaFigma />
-            <PiRocketLaunch />
+            <BsGithub className="duration-300 hover:-translate-y-1" />
+            <FaFigma className="duration-300 hover:-translate-y-1" />
+            <PiRocketLaunch className="duration-300 hover:-translate-y-1" />
           </div>
         </div>
       </div>
