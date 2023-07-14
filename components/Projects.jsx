@@ -48,7 +48,7 @@ const Projects = () => {
               dev=""
               nextjs={true}
               fig={true}
-              mongo={true}
+              mongo={false}
             />
             <ProjectLeft
               logo={beatdropLogo}

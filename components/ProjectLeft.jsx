@@ -62,9 +62,7 @@ const ProjectLeft = ({
                 </Link>
               )}
             </div>
-            <div className="flex items-center space-x-2">
-              {/* <div className="text-xs font-outfit text-bob-boldGray">
-              </div> */}
+            <div className="flex text-gray-500 items-center space-x-2">
               {nextjs && <TbBrandNextjs />}
               {fig && <FaFigma />}
               {mongo && <SiMongodb />}
