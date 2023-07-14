@@ -35,6 +35,9 @@ const Projects = () => {
               github="https://github.com/bobbyyy57/NOVO"
               figma="https://www.figma.com/file/lvAoZ2MpsxWq7zUQ1TSaMk/NOVO?type=design&node-id=0%3A1&mode=design&t=6xgQuQln9pu6vojn-1"
               dev=""
+              nextjs={true}
+              fig={true}
+              mongo={true}
             />
             <ProjectRight
               logo={RPartsLogo}
@@ -43,6 +46,9 @@ const Projects = () => {
               github="https://github.com/shahdivyank/r-parts"
               figma="https://www.figma.com/file/wecb185mWk9vv38hyGGbDF/R'Parts?type=design&node-id=0%3A1&mode=design&t=yHlFI64EB79R1hvM-1"
               dev=""
+              nextjs={true}
+              fig={true}
+              mongo={true}
             />
             <ProjectLeft
               logo={beatdropLogo}
@@ -53,6 +59,9 @@ const Projects = () => {
               github="https://github.com/shahdivyank/beatdrop/blob/dev/components/View.jsx"
               figma="https://www.figma.com/file/Hwiv8KHufaQZnrn2YiJQ1y/BeatDrop?type=design&node-id=0%3A1&mode=design&t=BMWy7fTlkpNOIfjs-1"
               dev=""
+              nextjs={true}
+              fig={true}
+              mongo={false}
             />
           </div>
         </div>

@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const ProjectLeft = ({ logo, description, screenshot, github, figma, dev }) => {
   return (
-    <div className="flex space-x-[2%]">
-      <div className="w-1/2 border rounded-l-xl flex flex-col justify-center items-center">
+    <div className="flex space-x-[2%] duration-300 hover:-translate-y-1">
+      <div className="w-1/2 border bg-bob-background rounded-l-xl flex flex-col justify-center items-center">
         <div className="px-[8%] space-y-[2%] flex flex-col items-end justify-end">
           <div className="w-5/12">
             <Image src={logo} alt="Landing" layout="responsive" className="" />
