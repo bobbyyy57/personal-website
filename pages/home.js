@@ -1,6 +1,7 @@
 import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
 import Experiences from "../components/Experiences";
+import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
@@ -17,6 +18,7 @@ export default function Home() {
         <Experiences />
         <AboutMe />
         <ContactMe />
+        <Footer />
       </div>
     </>
   );
