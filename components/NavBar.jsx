@@ -9,9 +9,10 @@ const NavBar = () => {
           <div className="flex justify-center space-x-[7%] w-full">
             <div>projects</div>
             <div>experiences</div>
-            <div>about me</div>
+            <div>about</div>
+            <div>contact</div>
           </div>
-          <div className="w-2/12 flex justify-end">contact me</div>
+          <div className="w-2/12 flex justify-end">resume</div>
         </div>
       </div>
     </>

@@ -6,9 +6,8 @@ import Cutie from "../public/cutie.png";
 const AboutMe = () => {
   return (
     <div>
-      {" "}
-      <div className="flex flex-col justify-center items-center pb-[20%]">
-        <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-6/12">
           <div className="w-full pb-[5%]">
             <div className="w-5/12">
               <div className="font-montserrat font-medium text-bob-boldGray text-lg">
@@ -21,8 +20,8 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="grid grid-rows-6 w-full h-full">
-            <div className="row-span-2">
+          <div className="w-full">
+            <div className="">
               <div className="grid grid-cols-12">
                 <div className="col-span-4 mb-2 mr-2">
                   <Image
@@ -37,7 +36,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-            <div className="row-span-4 h-fit">
+            <div className="h-fit">
               <div className="grid grid-cols-12 h-full ">
                 <div className="col-span-7">
                   <div className="grid grid-rows-7 h-full">

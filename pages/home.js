@@ -1,4 +1,5 @@
 import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
 import Experiences from "../components/Experiences";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
@@ -8,15 +9,14 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className=" flex flex-col justify-center items-center">
-        <div className="space-y-[7%] w-6/12 flex justify-center flex-col items-center">
-          <div className="mt-[6%]">
-            <Landing />
-          </div>
-          <Projects />
-          <Experiences />
-          <AboutMe />
+      <div className="space-y-[7%] flex justify-center flex-col items-center">
+        <div className="mt-[6%]">
+          <Landing />
         </div>
+        <Projects />
+        <Experiences />
+        <AboutMe />
+        <ContactMe />
       </div>
     </>
   );
