@@ -3,8 +3,10 @@ import Accordion from "react-bootstrap/Accordion";
 import { Col, Row } from "react-bootstrap";
 import { useState } from "react";
 import { PiCaretRightThin, PiCaretDownThin } from "react-icons/pi";
-// import { FaMinus } from "react-icons/fa";
 import Image from "next/image";
+import { FiPaperclip } from "react-icons/fi";
+import { HiOutlineNewspaper } from "react-icons/hi";
+import Link from "next/link";
 
 const info = [
   {
@@ -13,26 +15,28 @@ const info = [
     date: "SUMMER 2022",
     role: "TECHNOLOGY TRAINEE PROGRAM INTERN",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius sit amet mattis vulputate enim nulla aliquet. Amet tellus cras adipiscing enim eu turpis egestas pretium.",
-    tech: ["NEXT.JS", "TAILWINDCSS", "FIGMA", "MONGODB"],
+      "Assisted wholesalers in the North American Zone through Anheuser-Busch’s transition from Salesforce to BeerTech’s new OnePortal software by creating 3 standard operating procedures that covered Forecasting, Ordering, and Appointments \n \nOrganized user data in PowerBI, MixPanel, HotJar, and DataDog dashboards that aided both developer and functional teams in proceeding with production rollout\n \nDeveloped and designed a Support Tab using React, TailwindCSS, and Figma that centralized user experience on OnePortal",
+    tech: ["REACT", "TAILWINDCSS", "FIGMA", "POWERBI"],
+    attachment:
+      "https://drive.google.com/file/d/1OULdxSTKVaPPK2LG7CWOYIPn6ZTa6X3b/view?usp=sharing",
+    attachment2: "",
   },
   {
-    logo: "/ablogo.png",
-    company: "ANHEUSER-BUSCH",
-    date: "SUMMER 2022",
-    role: "TECHNOLOGY TRAINEE PROGRAM INTERN",
+    logo: "/NSF-1.png",
+    company: "UC RIVERSIDE - MACREU RESEARCH",
+    date: "SUMMER 2021",
+    role: "UNDERGRADUATE RESEARCHER AND INTERN",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius sit amet mattis vulputate enim nulla aliquet. Amet tellus cras adipiscing enim eu turpis egestas pretium.",
-    tech: ["NEXT.JS", "TAILWINDCSS", "FIGMA", "MONGODB"],
-  },
-  {
-    logo: "/ablogo.png",
-    company: "ANHEUSER-BUSCH",
-    date: "SUMMER 2022",
-    role: "TECHNOLOGY TRAINEE PROGRAM INTERN",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididu sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius sit amet mattis vulputate enim nulla aliquet. Amet tellus cras adipiscing enim eu turpis egestas pretium.",
-    tech: ["NEXT.JS", "TAILWINDCSS", "FIGMA", "MONGODB"],
+      " Focused on performance efficiency by optimizing existing matrix-multiplication operations on GPUs and CPUs using a Directed Acyclic Graph, or DAG, based implementation of Strassen-Winograd’s Algorithm \n\nIncreased matrix-multiplication runtime by 8.0x by using the DAG Strassen-Winograd Algorithm on GPUs\n\nContributed to research presented at The International Conference for High Performance Computing, Networking, Storage, and Analysis in St. Louis, Missouri",
+    tech: [
+      "C++",
+      "ROCm (Radeon Open Ecosystem)",
+      "HIP (Heterogenous-Compute Interface for Portability)",
+    ],
+    attachment:
+      "https://drive.google.com/file/d/1GNEpPl7LUM315xv7WR7d6qwo9bJdr-ww/view?usp=sharing",
+    attachment2:
+      "https://drive.google.com/file/d/13mvH3dPVl_tbB6bN0vU4uEMbbEfamtaE/view?usp=sharing",
   },
 ];
 
@@ -44,6 +48,8 @@ const Experience = ({
   date,
   tech,
   description,
+  attachment,
+  attachment2,
 }) => {
   const [toggle, setToggle] = useState(false);
 
@@ -105,20 +111,38 @@ const Experience = ({
                     height="1"
                   />
                 </div>
-                <div className="flex flex-col w-10/12 ml-5 ">
-                  <div className="text-black text-sm font-extralight ">
+                <div className="flex flex-col w-10/12 ml-5">
+                  <div className="text-black text-sm font-extralight whitespace-pre-line ">
                     {description}
                   </div>
-                  <Row className="mt-4">
-                    {tech.map((entry, index) => (
-                      <Col
-                        key={index}
-                        className="uppercase font-outfit text-xs font-light rounded-full mx-1 py-1 px-3 border !max-w-fit "
-                      >
-                        {entry}
-                      </Col>
-                    ))}
-                  </Row>
+                  <div className="flex justify-between mt-4 ">
+                    <Row className="w-9/12 flex  items-center  h-full">
+                      {tech.map((entry, index) => (
+                        <Col
+                          key={index}
+                          className="uppercase whitespace-nowrap font-outfit text-xs font-light rounded-full m-1 py-1 px-3 border !max-w-fit "
+                        >
+                          {entry}
+                        </Col>
+                      ))}
+                    </Row>
+                    <div className="w-3/12 flex justify-end items-center space-x-2">
+                      {attachment !== "" && (
+                        <Link target="_blank" href={attachment}>
+                          <div className="text-black duration-300 hover:-translate-y-1">
+                            <FiPaperclip />
+                          </div>
+                        </Link>
+                      )}
+                      {attachment2 !== "" && (
+                        <Link target="_blank" href={attachment2}>
+                          <div className="text-black text-xl duration-300 hover:-translate-y-1">
+                            <HiOutlineNewspaper />
+                          </div>
+                        </Link>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -168,6 +192,8 @@ const Experiences = () => {
                       date={exp.date}
                       description={exp.description}
                       tech={exp.tech}
+                      attachment={exp.attachment}
+                      attachment2={exp.attachment2}
                       index={index}
                       key={index}
                     />
