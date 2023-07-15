@@ -62,7 +62,7 @@ const Experience = ({
               </div>
 
               <div className="text-2xl text-black m-2">
-                {index === "0" ? (
+                {/* {index === "0" ? (
                   toggle ? (
                     <PiCaretDownThin />
                   ) : (
@@ -72,7 +72,9 @@ const Experience = ({
                   <PiCaretUpThin />
                 ) : (
                   <PiCaretDownThin />
-                )}
+                )} */}
+
+                {toggle ? <PiCaretUpThin /> : <PiCaretDownThin />}
               </div>
             </div>
           </Accordion.Button>

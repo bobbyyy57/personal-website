@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { Col, Row } from "react-bootstrap";
-import { useState } from "react";
+// import { useState } from "react";
 import Experience from "./Experience";
 
 const info = [
@@ -36,11 +36,11 @@ const info = [
 ];
 
 const Experiences = () => {
-  const [activeKey, setActiveKey] = useState("0");
+  // const [activeKey, setActiveKey] = useState("0");
 
-  const handleAccordionToggle = (index) => {
-    setActiveKey((prevKey) => (prevKey === index ? null : index));
-  };
+  // const handleAccordionToggle = (index) => {
+  //   setActiveKey((prevKey) => (prevKey === index ? null : index));
+  // };
 
   return (
     <div
@@ -54,8 +54,8 @@ const Experiences = () => {
               EXPERIENCES
             </div>
             <div className="font-outfit font-extralight text-bob-borderGray text-xs">
-              a few fun projects made fra few fun projects made fn projects made
-              era few fun projects made f
+              opportunities that learned so much from that ranges from industry
+              experience to school involvement
             </div>
           </div>
         </div>
@@ -65,9 +65,9 @@ const Experiences = () => {
               <Row className="w-full flex m-0 p-0 ">
                 <Accordion
                   className="w-full !p-0"
-                  activeKey={activeKey}
-                  onSelect={handleAccordionToggle}
-                  // alwaysOpen
+                  // activeKey={activeKey}
+                  // onSelect={handleAccordionToggle}
+                  alwaysOpen
                 >
                   {info.map((exp, index) => (
                     <Experience

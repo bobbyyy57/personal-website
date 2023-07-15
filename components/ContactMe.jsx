@@ -20,8 +20,8 @@ const ContactMe = () => {
                 CONTACT ME
               </div>
               <div className="font-outfit font-extralight text-bob-borderGray text-xs">
-                a few fun projects made fra few fun projects made fn project
-                made era few fun projects made f
+                feel free to contact me by any medium! i am open to talk about
+                absolutely anything :)
               </div>
             </div>
             <div>
