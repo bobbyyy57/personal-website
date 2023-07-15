@@ -1,5 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -45,7 +46,15 @@ const NavBar = () => {
               contact
             </ScrollLink>
           </div>
-          <div className="w-2/12 flex justify-end">resume</div>
+          <div className="w-2/12 flex justify-end">
+            <Link
+              target="_blank"
+              href="resume.pdf"
+              className="no-underline text-black"
+            >
+              resume
+            </Link>
+          </div>
         </div>
       </div>
     </>
