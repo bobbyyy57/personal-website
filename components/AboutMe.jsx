@@ -2,6 +2,21 @@ import React from "react";
 import Image from "next/image";
 import Bob from "../public/bob.png";
 import Cutie from "../public/cutie.png";
+import { BsGithub } from "react-icons/bs";
+import { FaFigma } from "react-icons/fa";
+import { TbBrandNextjs, TbSchool } from "react-icons/tb";
+import { SiMongodb } from "react-icons/si";
+import {
+  SiCplusplus,
+  SiPython,
+  SiUnity,
+  SiTailwindcss,
+  SiVisualstudiocode,
+  SiAdobephotoshop,
+  SiHtml5,
+  SiCss3,
+} from "react-icons/si";
+import { BiLogoJavascript } from "react-icons/bi";
 
 const AboutMe = () => {
   return (
@@ -31,8 +46,30 @@ const AboutMe = () => {
                     className="aspect-square rounded-2xl"
                   />
                 </div>
-                <div className="col-span-8 border rounded-2xl w-full mb-2">
-                  <div className="p-4 font-outfit">adsfadfasd</div>
+                <div className="col-span-8 border flex justify-center space-y-10 items-center flex-col  rounded-2xl w-full p-4 mb-2">
+                  <div className=" font-outfit font-light text-sm">
+                    <span className="">
+                      software engineer and ui/ux designer in southern
+                      california.
+                    </span>{" "}
+                    catch me shamelessly belting show tunes in the car or
+                    playing overwatch.
+                  </div>
+                  <div className="flex text-2xl space-x-2">
+                    <BsGithub />
+                    <FaFigma />
+                    <TbBrandNextjs />
+                    <SiMongodb />
+                    <SiCplusplus />
+                    <SiPython />
+                    <SiUnity />
+                    <SiTailwindcss />
+                    <SiVisualstudiocode />
+                    <SiAdobephotoshop />
+                    <SiHtml5 />
+                    <SiCss3 />
+                    <BiLogoJavascript />
+                  </div>
                 </div>
               </div>
             </div>
@@ -41,15 +78,21 @@ const AboutMe = () => {
                 <div className="col-span-7">
                   <div className="grid grid-rows-7 h-full">
                     <div className="row-span-3 flex">
-                      <div className="flex flex-col justify-center items-start rounded-2xl border w-8/12 p-4 mr-2 ">
-                        <div className="text-xs font-outfit ">
+                      <div className="flex flex-col justify-center items-center rounded-2xl border w-8/12 px-4 mr-2 ">
+                        <div className="text-2xl mb-1 text-gray-black">
+                          <TbSchool />
+                        </div>
+
+                        <div className="text-xs font-outfit font-medium">
                           UNIVERSITY OF CALIFORNIA, RIVERSIDE
                         </div>
-                        <div className="text-xs font-outfit ">
+                        <div className="text-xs font-outfit font-light">
                           B.S. COMPUTER SCIENCE
                         </div>
-                        <div className="text-xs font-outfit ">CUM LAUDE</div>
-                        <div className="text-xs font-outfit mt-2">
+                        <div className="text-xs font-outfit font-light">
+                          CUM LAUDE
+                        </div>
+                        <div className="text-xs font-outfit font-medium mt-2">
                           2019-2023
                         </div>
                       </div>
@@ -62,17 +105,22 @@ const AboutMe = () => {
                         />
                       </div>
                     </div>
-                    <div className=" uppercase row-span-4 rounded-2xl text-sm font-outfit font-thin bg-bob-orange text-white p-5 mt-2">
-                      the human need to understand who you are, what you believe
-                      in and what you stand for is fundamental.{" "}
-                      <span className="font-normal">
-                        {" "}
-                        so too is the need to indicate these things to others
-                      </span>
+                    <div className=" flex flex-col justify-center uppercase row-span-4 rounded-2xl text-sm font-outfit font-thin bg-bob-orange text-white px-5 py-3 mt-2">
+                      <div className="">
+                        the human need to understand who you are, what you
+                        believe in and what you stand for is fundamental.{" "}
+                        <span className="font-normal">
+                          {" "}
+                          so too is the need to indicate these things to others
+                        </span>
+                      </div>
+                      <div className="text-xs flex justify-end mt-3">
+                        — Ken Cato, RECOGNISE ME
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-span-5 rounded-2xl bg-red-500  ml-2">
+                <div className="col-span-5 rounded-2xl  ml-2">
                   <iframe
                     src="https://open.spotify.com/embed/playlist/7AilqvU8xj4h6Zn5ti9JZt?utm_source=generator&theme=0"
                     width="100%"

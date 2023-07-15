@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="space-y-[7%] flex justify-center flex-col items-center">
+      <div className="space-y-[7%] flex justify-center flex-col items-center bg-bob-background">
         <div className="mt-[6%]">
           <Landing />
         </div>

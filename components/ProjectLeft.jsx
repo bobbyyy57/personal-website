@@ -3,10 +3,9 @@ import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
 import { PiRocketLaunch } from "react-icons/pi";
-import Link from "next/link";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
-// import {LiaToolsSolid} from "react-icons/lia"
+import Link from "next/link";
 
 const ProjectLeft = ({
   logo,

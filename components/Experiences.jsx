@@ -67,6 +67,7 @@ const Experiences = () => {
                   className="w-full !p-0"
                   activeKey={activeKey}
                   onSelect={handleAccordionToggle}
+                  // alwaysOpen
                 >
                   {info.map((exp, index) => (
                     <Experience
