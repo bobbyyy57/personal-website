@@ -10,16 +10,19 @@ import Projects from "../components/Projects";
 export default function Home() {
   return (
     <>
+      {/* flex justify-center flex-col items-center  */}
       <NavBar />
-      <div className="space-y-[7%] flex justify-center flex-col items-center bg-bob-background">
-        <div className="mt-[6%]">
-          <Landing />
+      <div className="flex justify-center flex-col items-center ">
+        <div className="space-y-[20%] flex justify-center flex-col items-center  bg-bob-background w-1/2">
+          <div className="mt-[15%] ">
+            <Landing />
+          </div>
+          <Projects />
+          <Experiences />
+          <AboutMe />
+          <ContactMe />
+          <Footer />
         </div>
-        <Projects />
-        <Experiences />
-        <AboutMe />
-        <ContactMe />
-        <Footer />
       </div>
     </>
   );

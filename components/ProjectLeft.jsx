@@ -17,6 +17,7 @@ const ProjectLeft = ({
   nextjs,
   fig,
   mongo,
+  role,
 }) => {
   return (
     <div className="flex space-x-[2%] duration-300 hover:-translate-y-1">
@@ -36,6 +37,10 @@ const ProjectLeft = ({
           <div className="font-outfit font-extralight text-bob-borderGray text-xs">
             {description}
           </div>
+          <div className="font-outfit font-base text-bob-borderGray text-xs">
+            Roles: {role}
+          </div>
+
           <div className="flex justify-between text-xl pt-4 ">
             <div className=" w-fit space-x-2 flex ">
               <Link

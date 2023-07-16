@@ -55,7 +55,7 @@ const Experience = ({
                   <div className="text-black  font-extralight text-sm ml-5 ">
                     {role}
                   </div>
-                  <div className="text-black pt-1 font-montserrat font-thin text-xs ml-5 ">
+                  <div className="text-black pt-1 font-montserrat font-thin text-sm ml-5 ">
                     {date}
                   </div>
                 </div>
