@@ -38,7 +38,7 @@ const ProjectLeft = ({
             <div className="font-outfit font-base text-bob-borderGray text-xs">
               Roles: {role}
             </div>
-            <div className="flex justify-between text-xl pt-4  w-full">
+            <div className="flex justify-between text-xl pt-4 pb-3 w-full">
               <div className="flex text-gray-500 items-center space-x-2 ">
                 {nextjs && <TbBrandNextjs />}
                 {fig && <FaFigma />}
