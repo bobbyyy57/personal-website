@@ -66,14 +66,16 @@ const AboutMe = () => {
                       <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially
-                          "I will fall in love to Fly Love by Jamie Foxx from the movie, Rio",
-                          1000, // wait 1s before replacing "Mice" with "Hamsters"
+                          "I will fall in love to Fly Love by Jamie Foxx from the movie Rio. I will.",
+                          2500, // wait 1s before replacing "Mice" with "Hamsters"
                           "The Marvelous Mrs. Maisal is underrated",
-                          1000,
+                          2500,
                           "a moment: singing karaoke with 11/10 body and soul with friends on the slow lane",
-                          1000,
-                          '"I am aware that I am surrounded by people who feel that they can could do the job better. But, for better or worse, the Crown has landed on my head." -The Crown',
-                          1000,
+                          2500,
+                          "can i get a pizza pretzel and salted pretzel bites with a side of cheese, please? #wetzelpretzel",
+                          2500,
+                          "Sabor a Mi - Eydie Gormé and Los Panchos will be my wedding song.",
+                          2500,
                         ]}
                         // wrapper="span"
                         speed={70}
