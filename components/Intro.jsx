@@ -61,12 +61,14 @@ const Intro = () => {
           <div className="space-y-6 font-extralight font-outfit text-sm">
             <div className="whitespace-pre-line">{typedText}</div>
           </div>
-          <Link
-            href="/home"
-            className="pt-[15%] duration-300 hover:-translate-y-1 text-black"
-          >
-            <HiOutlineArrowRight />
-          </Link>
+          {animationComplete && (
+            <Link
+              href="/home"
+              className="pt-[15%] duration-300 hover:-translate-y-1 text-black"
+            >
+              <HiOutlineArrowRight />
+            </Link>
+          )}
         </div>
       </div>
     </>

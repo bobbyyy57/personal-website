@@ -96,7 +96,7 @@ const NavBar = () => {
         <>
           <div className="sm:hidden z-10 fixed right-0 mt-[10%] mr-[4%]">
             <div>
-              <div className="bg-bob-background border rounded-2xl flex font-outfit flex-col justify-center items-center space-x-[7%] w-full px-4 py-3">
+              <div className="bg-bob-background border rounded flex font-outfit flex-col justify-center items-center space-x-[7%] w-full px-4 py-3">
                 <ScrollLink
                   to="projects"
                   smooth={true}
