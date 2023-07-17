@@ -36,7 +36,7 @@ const Intro = () => {
     };
 
     if (!animationComplete) {
-      interval = setInterval(typeText, 50); // Delay between each character
+      interval = setInterval(typeText, 30); // Delay between each character
     }
 
     return () => {
