@@ -24,7 +24,7 @@ const AboutMe = () => {
   return (
     <>
       <div>
-        <div className="w-full pb-[5] max-sm:flex max-sm:justify-center">
+        <div className="w-full pb-5 max-sm:flex max-sm:justify-center">
           <div className="w-5/12 max-sm:w-8/12  max-sm:pb-5 max-sm:justify-center max-sm:flex max-sm:flex-col ">
             <div
               id="about"
