@@ -6,10 +6,14 @@ import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
 // import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Bobby Lerias | Home</title>
+      </Head>
       {/* flex justify-center flex-col items-center  */}
       <NavBar />
       <div className="flex justify-center flex-col items-center ">
