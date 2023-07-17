@@ -10,6 +10,9 @@ module.exports = {
         outfit: ["var(--font-outfit)", "sans-serif"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
+      fontSize: {
+        xxs: "0.5rem",
+      },
       colors: {
         bob: {
           boldGray: "#767676",

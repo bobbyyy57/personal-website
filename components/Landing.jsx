@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 const Landing = () => {
@@ -30,23 +31,23 @@ const Landing = () => {
               </div>
             </div>
             <div className="max-lg:hidden border rounded w-full font-outfit font-extralight text-sm text-bob-borderGray  px-[5%] py-[3%]">
-              Software Engineer and UI/UX Designer based in Southern California.
-              I am a recent Computer Science graduate from the University of
-              California, Riverisde.{" "}
+              Hello hello, nice to virtually meet you, I'm Bobby! I am a
+              Software Engineer and UI/UX Designer based in Southern California.{" "}
               <span className="font-medium">
                 I am currently looking for opportunities to learn, experience
                 new things, and push limits for myself and others.{" "}
               </span>
               Until then, catch me shamelessly belting show tunes in the car or
-              playing Overwatch.
+              playing Overwatch. Welcome to my page :)
             </div>
             <div className="lg:hidden border rounded w-full font-outfit font-extralight text-sm text-bob-borderGray  px-[5%] py-[3%]">
+              Hello hello, nice to virtually meet you, I'm Bobby!{" "}
               <span className="font-medium">
                 I am currently looking for opportunities to learn, experience
                 new things, and push limits for myself and others.{" "}
               </span>
               Until then, catch me shamelessly belting show tunes in the car or
-              playing Overwatch.
+              playing Overwatch. Welcome to my page :)
             </div>
           </div>
         </div>
