@@ -37,7 +37,7 @@ const ProjectLeft = ({
                 src={logo}
                 alt="Landing"
                 layout="responsive"
-                className=""
+                className="md:-ml-3"
               />
             </div>
             <div className="font-outfit font-extralight text-bob-borderGray text-xs">
