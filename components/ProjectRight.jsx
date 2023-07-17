@@ -24,7 +24,7 @@ const ProjectLeft = ({
       <div className="flex space-x-[2%] duration-300 hover:-translate-y-1 max-md:hidden py-1">
         <div className="w-1/2 border bg-bob-background rounded-l-xl flex flex-col justify-center items-center">
           <div className="px-[8%] space-y-[2%] flex flex-col items-end justify-end">
-            <div className="w-5/12">
+            <div className="w-5/12 py-2">
               <Image
                 src={logo}
                 alt="Landing"
@@ -91,7 +91,7 @@ const ProjectLeft = ({
         </div>
         <div className="border rounded-b-xl flex flex-col justify-center items-center w-full">
           <div className="flex justify-center items-center flex-col px-[8%] space-y-[2%]">
-            <div className="w-5/12 pt-2 flex items-center">
+            <div className="w-5/12 py-2 flex items-center">
               <Image
                 src={logo}
                 alt="Landing"
