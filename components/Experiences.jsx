@@ -23,11 +23,9 @@ const info = [
     role: "UNDERGRADUATE RESEARCHER AND INTERN",
     description:
       " Focused on performance efficiency by optimizing existing matrix-multiplication operations on GPUs and CPUs using a Directed Acyclic Graph, or DAG, based implementation of Strassen-Winograd’s Algorithm \n\nIncreased matrix-multiplication runtime by 8.0x by using the DAG Strassen-Winograd Algorithm on GPUs\n\nContributed to research presented at The International Conference for High Performance Computing, Networking, Storage, and Analysis in St. Louis, Missouri",
-    tech: [
-      "C++",
-      "ROCm (Radeon Open Ecosystem)",
-      "HIP (Heterogenous-Compute Interface for Portability)",
-    ],
+    tech: ["C++", "ROCm ", "HIP"],
+    // (Heterogenous-Compute Interface for Portability)
+    // (Radeon Open Ecosystem)
     attachment:
       "https://drive.google.com/file/d/1GNEpPl7LUM315xv7WR7d6qwo9bJdr-ww/view?usp=sharing",
     attachment2:
