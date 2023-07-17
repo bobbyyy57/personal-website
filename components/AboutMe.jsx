@@ -5,6 +5,7 @@ import Cutie from "../public/cutie.png";
 import { BsGithub } from "react-icons/bs";
 import { FaFigma, FaGit } from "react-icons/fa";
 import { TbBrandNextjs, TbSchool } from "react-icons/tb";
+import { TypeAnimation } from "react-type-animation";
 import { SiMongodb } from "react-icons/si";
 import {
   SiCplusplus,
@@ -17,6 +18,7 @@ import {
   SiCss3,
 } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
+import { VscVerifiedFilled } from "react-icons/vsc";
 
 const AboutMe = () => {
   return (
@@ -46,12 +48,36 @@ const AboutMe = () => {
                 />
               </div>
               <div className="col-span-8 flex justify-center items-center flex-col w-full">
-                <div className=" font-outfit font-light text-xs  border rounded-2xl w-full mb-2 h-full p-[5%] duration-300 hover:-translate-y-1">
-                  <span className="">
-                    software engineer and ui/ux designer in southern california.
-                  </span>{" "}
-                  catch me shamelessly belting show tunes in the car or playing
-                  overwatch.
+                <div className=" font-outfit font-light text-sm  border rounded-2xl w-full mb-2 h-full p-[5%] duration-300 hover:-translate-y-1">
+                  <div className="font-medium font-outift flex items-center">
+                    Bobby Lerias{" "}
+                    <div className="text-blue-400 mx-1">
+                      <VscVerifiedFilled />
+                    </div>{" "}
+                    <span className="font-light text-bob-boldGray">
+                      @bobbyyy • Just Now
+                    </span>
+                    {/* <span className="font-light">• Just Now</span> */}
+                  </div>
+                  <div className="font-outfit font-light !text-base mt-1 text-black">
+                    <TypeAnimation
+                      sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        "I will fall in love to Fly Love by Jamie Foxx from the movie, Rio",
+                        1000, // wait 1s before replacing "Mice" with "Hamsters"
+                        "The Marvelous Mrs. Maisal is underrated",
+                        1000,
+                        "a moment: singing karaoke with 11/10 body and soul with friends on the slow lane",
+                        1000,
+                        '"I am aware that I am surrounded by people who feel that they can could do the job better. But, for better or worse, the Crown has landed on my head." -The Crown',
+                        1000,
+                      ]}
+                      // wrapper="span"
+                      speed={70}
+                      repeat={Infinity}
+                      className=""
+                    />
+                  </div>
                 </div>
                 <div className="flex justify-center items-center text-2xl space-x-2  border rounded-2xl w-full mb-2 h-fit py-[5%] duration-300 hover:-translate-y-1">
                   <BsGithub className="" />
