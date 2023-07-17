@@ -8,6 +8,7 @@ const SideProject = ({ name, description, role, image, link }) => {
     <>
       <Link
         href={link}
+        target="_blank"
         className="relative w-full duration-300 hover:-translate-y-1 "
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
