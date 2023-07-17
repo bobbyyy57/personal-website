@@ -40,7 +40,7 @@ const Landing = () => {
               Until then, catch me shamelessly belting show tunes in the car or
               playing Overwatch. Welcome to my page :)
             </div>
-            <div className="lg:hidden border text-center rounded w-full font-outfit font-extralight text-sm text-bob-borderGray  px-[10%] py-[5%]">
+            <div className="lg:hidden border text-center rounded w-full font-outfit font-extralight text-sm text-bob-borderGray  px-[7%] py-[7%]">
               Hello hello, nice to virtually meet you, I'm Bobby!{" "}
               <span className="font-medium">
                 I am currently looking for opportunities to learn, experience
