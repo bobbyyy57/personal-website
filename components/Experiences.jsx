@@ -45,7 +45,7 @@ const Experiences = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="w-full pb-[5%] max-sm:flex max-sm:justify-center">
           <div className="w-5/12 max-sm:w-8/12 max-sm:pb-2">
-            <div className="max-sm:text-center ont-montserrat font-medium text-black text-lg">
+            <div className="max-sm:text-center font-montserrat font-medium text-black text-lg">
               EXPERIENCES
             </div>
             <div className="max-sm:text-center font-outfit font-extralight text-bob-borderGray text-xs">
