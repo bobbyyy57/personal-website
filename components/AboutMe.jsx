@@ -111,7 +111,7 @@ const AboutMe = () => {
                           <TbSchool />
                         </div>
 
-                        <div className="text-xs font-outfit font-medium">
+                        <div className="text-center text-xs font-outfit font-medium">
                           UNIVERSITY OF CALIFORNIA, RIVERSIDE
                         </div>
                         <div className="text-xs font-outfit font-light">

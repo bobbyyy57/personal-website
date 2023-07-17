@@ -47,7 +47,7 @@ const ProjectLeft = ({
               Roles: {role}
             </div>
 
-            <div className="flex justify-between text-xl pt-4 max-lg:pb-3 max-md:bg-red-500">
+            <div className="flex justify-between text-xl pt-4 pb-3 max-lg:pb-3 max-md:bg-red-500">
               <div className=" w-fit space-x-2 flex">
                 <Link
                   target="_blank"
