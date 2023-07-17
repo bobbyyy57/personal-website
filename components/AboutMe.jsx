@@ -196,9 +196,9 @@ const AboutMe = () => {
                           2500,
                           "a moment: singing karaoke with 11/10 body and soul with friends on the slow lane",
                           2500,
-                          '"I am aware that I am surrounded by people who feel that they can could do the job better. But, for better or worse, the Crown has landed on my head." -The Crown',
+                          "can i get a pizza pretzel and salted pretzel bites with a side of cheese, please? #wetzelpretzel",
                           2500,
-                          "Sabor a Mi - Eydie Gormé and Los Panchos will be my wedding song. First gotta know Spanish tho",
+                          "Sabor a Mi - Eydie Gormé and Los Panchos will be my wedding song.",
                           2500,
                         ]}
                         // wrapper="span"
