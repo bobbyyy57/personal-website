@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const SideProject = ({ name, description, role, image }) => {
+const SideProject = ({ name, description, role, image, link }) => {
   const [isHover, setIsHover] = useState(false);
   return (
     <>
       <Link
-        href=""
+        href={link}
         className="relative w-full duration-300 hover:-translate-y-1"
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}

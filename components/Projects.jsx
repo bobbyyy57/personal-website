@@ -87,6 +87,7 @@ const Projects = () => {
               Intern get home."
                 role="Artist"
                 image={Overtime}
+                link=""
               />
               <SideProject
                 name="Bob&Rod's"
@@ -95,6 +96,7 @@ const Projects = () => {
               skills. Go now and have fun!"
                 role="Developer & Designer"
                 image={Vr}
+                link="https://bobbyyy57.itch.io/bobrods"
               />
             </div>
           </div>

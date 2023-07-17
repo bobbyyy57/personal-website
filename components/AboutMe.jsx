@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Bob from "../public/bob4.png";
+import Bob from "../public/introFace.png";
 import Cutie from "../public/cutie.png";
 import { BsGithub } from "react-icons/bs";
 import { FaFigma, FaGit } from "react-icons/fa";
@@ -23,19 +23,21 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 const AboutMe = () => {
   return (
     <>
-      <div id="about" className="max-sm:hidden">
-        <div className="w-full pb-[5%]">
-          <div className="w-5/12">
-            <div className="font-montserrat font-medium text-black text-lg">
-              ABOUT ME
-            </div>
-            <div className="font-outfit font-extralight text-bob-borderGray text-xs">
-              some fun information about myself and what is currently playing in
-              my earbuds
-            </div>
+      <div className="w-full pb-[5%] max-sm:flex max-sm:justify-center">
+        <div className="w-5/12 maxsm:w-8/12 max-sm:pb-5 max-sm:justify-center max-sm:flex max-sm:flex-col">
+          <div
+            id="about"
+            className="font-montserrat font-medium text-black text-lg max-sm:flex max-sm:justify-center"
+          >
+            ABOUT ME
+          </div>
+          <div className="max-sm:text-center font-outfit font-extralight text-bob-borderGray text-xs">
+            some fun information about myself and what is currently playing in
+            my earbuds
           </div>
         </div>
-
+      </div>
+      <div className="max-sm:hidden">
         <div className="w-full">
           <div className="">
             <div className="grid grid-cols-12">
@@ -160,19 +162,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div id="about" className="sm:hidden ">
-        <div className=" flex justify-center">
-          <div className="w-8/12 pb-5 flex justify-center flex-col">
-            <div className="flex justify-center font-montserrat font-medium text-black text-lg">
-              ABOUT ME
-            </div>
-            <div className="text-center font-outfit font-extralight text-bob-borderGray text-xs">
-              some fun information about myself and what is currently playing in
-              my earbuds
-            </div>
-          </div>
-        </div>
-
+      <div className="sm:hidden ">
         <div className="w-full">
           <div className="">
             <div className="">
