@@ -13,7 +13,7 @@ export default function Home() {
       {/* flex justify-center flex-col items-center  */}
       <NavBar />
       <div className="flex justify-center flex-col items-center ">
-        <div className="space-y-[20%] flex justify-center flex-col items-center  bg-bob-background w-1/2">
+        <div className="space-y-[20%] flex justify-center flex-col items-center  bg-bob-background w-1/2 max-lg:w-10/12">
           <div className="mt-[15%] ">
             <Landing />
           </div>

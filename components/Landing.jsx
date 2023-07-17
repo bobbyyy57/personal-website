@@ -12,7 +12,7 @@ const Landing = () => {
                 <div className="hover:text-bob-orange duration-300">BOBBY</div>
                 <div>LERIAS</div>
               </div>
-              <div className="border-l-[1px] w-full max-lg:hidden">
+              <div className="border-l-[1px] w-full max-md:hidden">
                 <div className="ml-[10%] font-montserrat text-bob-borderGray font-thin text-xl flex justify-center items-start flex-col  h-full">
                   <div className="">
                     <div>GAMER</div>

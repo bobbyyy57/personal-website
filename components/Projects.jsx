@@ -17,12 +17,12 @@ const Projects = () => {
     <>
       <div id="projects" className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <div className="w-full pb-[5%]">
-            <div className="w-5/12">
-              <div className="font-montserrat font-medium text-black text-lg">
+          <div className="w-full pb-[5%] max-md:flex max-md:justify-center max-md:items-center">
+            <div className="w-5/12 max-md:w-8/12 max-md:pb-2">
+              <div className="font-montserrat font-medium text-black text-lg max-md:flex max-md:justify-center max-md:items-center  ">
                 PROJECTS
               </div>
-              <div className="font-outfit font-extralight text-bob-borderGray text-xs">
+              <div className="font-outfit font-extralight text-bob-borderGray text-xs max-md:text-center">
                 fun projects ive done in my time where ive held the roles of
                 software engineer, ui/ux designer, and product manager.
               </div>
@@ -32,7 +32,7 @@ const Projects = () => {
             <ProjectLeft
               logo={novoLogo}
               screenshot={novo}
-              description="a dating web application focused on fostering connections with individuals seeking new experiences. Share what you’ve been wanting to experience and connect with others who want to do the same."
+              description="a dating app focused on fostering connections with individuals seeking new experiences. Share what you want to experience and connect with others who want to do the same."
               github="https://github.com/bobbyyy57/NOVO"
               figma="https://www.figma.com/file/lvAoZ2MpsxWq7zUQ1TSaMk/NOVO?type=design&node-id=0%3A1&mode=design&t=6xgQuQln9pu6vojn-1"
               dev=""
@@ -68,11 +68,11 @@ const Projects = () => {
               role="Developer & Designer"
             />
             <div className="w-full border-t pt-[5%] flex justify-center">
-              <div className="w-5/12">
+              <div className="w-5/12 max-md:w-full max-md:flex max-md:justify-center max-md:items-center">
                 {/* <div className="font-montserrat font-medium text-black">
                   GAMES
                 </div> */}
-                <div className="font-outfit font-extralight text-bob-borderGray text-xs text-center">
+                <div className="font-outfit font-extralight  max-md:pb-2 max-md:w-8/12 text-bob-borderGray text-xs text-center">
                   a few side projects that ive done for fun that include some
                   video games. held roles as a developer and artist.
                 </div>
