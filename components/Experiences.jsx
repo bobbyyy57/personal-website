@@ -49,7 +49,7 @@ const Experiences = () => {
               EXPERIENCES
             </div>
             <div className="max-sm:text-center font-outfit font-extralight text-bob-borderGray text-xs">
-              opportunities that ive learned so much from — ranges from industry
+              opportunities in which ive learned so much — ranging from industry
               experience to school involvement
             </div>
           </div>
