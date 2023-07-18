@@ -23,7 +23,7 @@ const Projects = () => {
                 PROJECTS
               </div>
               <div className="font-outfit font-extralight text-bob-borderGray text-xs max-md:text-center">
-                fun projects ive done in my time where ive held the roles of
+                fun projects ive done in my time where ive held the roles as a
                 software engineer, ui/ux designer, and product manager.
               </div>
             </div>
