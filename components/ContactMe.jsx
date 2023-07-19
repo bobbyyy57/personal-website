@@ -9,8 +9,11 @@ import Link from "next/link";
 const ContactMe = () => {
   return (
     <>
-      <div id="contact" className="flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center">
+      <div
+        id="contact"
+        className="flex flex-col justify-center items-center w-full"
+      >
+        <div className="flex flex-col justify-center items-center w-full">
           <div className="flex max-sm:flex-col justify-between items-center w-full">
             <div className="w-5/12 max-sm:w-8/12 max-sm:pb-2">
               <div className="max-sm:text-center font-montserrat font-medium text-black text-lg">
