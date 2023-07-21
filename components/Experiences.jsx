@@ -3,6 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { Col, Row } from "react-bootstrap";
 // import { useState } from "react";
 import Experience from "./Experience";
+import { motion } from "framer-motion";
 
 const info = [
   {
@@ -41,7 +42,13 @@ const Experiences = () => {
   // };
 
   return (
-    <div id="experiences" className="flex flex-col justify-center items-center">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 7, transition: { delay: 1.5 } }}
+      exit={{ opacity: 0, y: 0 }}
+      id="experiences"
+      className="flex flex-col justify-center items-center"
+    >
       <div className="flex flex-col justify-center items-center">
         <div className="w-full pb-[5%] max-sm:flex max-sm:justify-center">
           <div className="w-5/12 max-sm:w-8/12 max-sm:pb-2">
@@ -84,7 +91,7 @@ const Experiences = () => {
           </Col>
         </Row>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

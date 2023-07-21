@@ -11,11 +11,19 @@ import ProjectRight from "./ProjectRight";
 import Overtime from "../public/overtime2.png";
 import Vr from "../public/vr2.png";
 import SideProject from "./SideProject";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <>
-      <div id="projects" className="flex flex-col justify-center items-center">
+      <motion.div
+        // ref={homeRef}
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 7, transition: { delay: 1.25 } }}
+        exit={{ opacity: 0, y: 0 }}
+        id="projects"
+        className="flex flex-col justify-center items-center"
+      >
         <div className="flex flex-col justify-center items-center">
           <div className="w-full pb-[5%] max-md:flex max-md:justify-center max-md:items-center">
             <div className="w-5/12 max-md:w-8/12 max-md:pb-2">
@@ -101,7 +109,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

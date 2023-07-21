@@ -19,11 +19,16 @@ import {
 } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
 import { VscVerifiedFilled } from "react-icons/vsc";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <>
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 7, transition: { delay: 2 } }}
+        exit={{ opacity: 0, y: 0 }}
+      >
         <div className="w-full pb-5 max-sm:flex max-sm:justify-center">
           <div className="w-5/12 max-sm:w-8/12  max-sm:pb-5 max-sm:justify-center max-sm:flex max-sm:flex-col ">
             <div
@@ -290,7 +295,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
