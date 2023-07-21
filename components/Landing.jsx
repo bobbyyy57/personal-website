@@ -1,11 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
     <>
       {/* Desktop */}
-      <div className="flex flex-col justify-center items-center ">
+      <motion.div
+        // ref={homeRef}
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 7, transition: { delay: 1 } }}
+        exit={{ opacity: 0, y: 0 }}
+        className="flex flex-col justify-center items-center "
+      >
         <div className="flex flex-col justify-center items-center ">
           <div className="flex flex-col justify-between items-center space-y-[5%] w-full">
             <div className="flex w-full">
@@ -52,7 +59,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
