@@ -182,8 +182,8 @@ const AboutMe = () => {
                     className="aspect-square rounded-2xl"
                   />
                 </div>
-                <div className=" flex justify-center items-center flex-col w-full">
-                  <div className=" font-outfit font-light text-sm  border rounded-2xl w-full mb-2 h-full p-[5%] duration-300 hover:-translate-y-1">
+                <div className=" flex justify-center items-center flex-col w-full ">
+                  <div className="font-outfit font-light text-sm  border rounded-2xl w-full mb-2 h-[130px] p-[5%] duration-300 hover:-translate-y-1">
                     <div className="font-medium font-outift flex items-center">
                       Bobby Lerias{" "}
                       <div className="text-blue-400 mx-1">
@@ -193,7 +193,7 @@ const AboutMe = () => {
                         @bobbyyy • Just Now
                       </span>
                     </div>
-                    <div className="font-outfit font-light !text-base mt-1 text-black">
+                    <div className="font-outfit font-light !text-base mt-1 text-black ">
                       <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially

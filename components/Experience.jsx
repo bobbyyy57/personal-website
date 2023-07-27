@@ -34,9 +34,9 @@ const Experience = ({
         <div className=" text-black after:hidden !p-0 focus:!shadow-none  shadow-none !m-0">
           <Accordion.Button
             onClick={() => setToggle(!toggle)}
-            className="!bg-bob-background text-black after:hidden !p-0  focus:!shadow-none   shadow-none !m-0"
+            className="!bg-bob-background text-black after:hidden !p-0  focus:!shadow-none   shadow-none !m-0 uppercase"
           >
-            <div className="flex justify-between items-center p-3">
+            <div className="flex justify-between items-center p-3 w-full">
               <div className="flex items-center">
                 <div className="w-2/12">
                   <Image
