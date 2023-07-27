@@ -7,6 +7,28 @@ import { motion } from "framer-motion";
 
 const info = [
   {
+    logo: "/citruslogo.png",
+    company: "CITRUS HACK 2023",
+    date: "SPRING 2023",
+    role: "SOFTWARE ENGINEER AND UI/UX COMMITTEE",
+    description:
+      "Developed custom Next.js components in accordance with the design specifications provided by the UI/UX team, resulting in visually appealing and user-friendly interfaces. \n\nEnsured design feasibility and responsiveness across desktop, tablet, and mobile screen as a designer and developer",
+    tech: ["REACT", "TAILWINDCSS", "FIGMA"],
+    attachment: "",
+    attachment2: "",
+  },
+  {
+    logo: "/acmlogo.png",
+    company: "ACM  -  UC RIVERSIDE",
+    date: "Winter 2023",
+    role: "ACM Project Developer",
+    description:
+      "Held the role as a Software Engineer in the ACM Membership Portal team. \n\nReconfigured and implemented responsive design elements to enhance user experience on various front-end platforms \n\n Maintained and improved front-end functionality of multiple websites through regular updates and bug fixing",
+    tech: ["Next.js", "TAILWINDCSS", "FIGMA"],
+    attachment: "",
+    attachment2: "",
+  },
+  {
     logo: "/ablogo.png",
     company: "ANHEUSER-BUSCH",
     date: "SUMMER 2022",
