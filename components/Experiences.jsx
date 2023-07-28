@@ -12,8 +12,8 @@ const info = [
     date: "SPRING 2023",
     role: "SOFTWARE ENGINEER AND UI/UX COMMITTEE",
     description:
-      "Developed custom Next.js components in accordance with the design specifications provided by the UI/UX team, resulting in visually appealing and user-friendly interfaces. \n\nEnsured design feasibility and responsiveness across desktop, tablet, and mobile screen as a designer and developer",
-    tech: ["REACT", "TAILWINDCSS", "FIGMA"],
+      "Developed custom Next.js components in accordance with the design specifications provided by the UI/UX team, resulting in visually appealing and user-friendly interfaces \n\nEnsured design feasibility and responsiveness across desktop, tablet, and mobile screen as a designer and developer",
+    tech: ["TYPESCRIPT", "TAILWINDCSS", "FIGMA"],
     attachment: "",
     attachment2: "",
   },
@@ -23,7 +23,7 @@ const info = [
     date: "Winter 2023",
     role: "ACM Project Developer",
     description:
-      "Held the role as a Software Engineer in the ACM Membership Portal team. \n\nReconfigured and implemented responsive design elements to enhance user experience on various front-end platforms \n\n Maintained and improved front-end functionality of multiple websites through regular updates and bug fixing",
+      "Held the role as a Software Engineer in the ACM Membership Portal team\n\nReconfigured and implemented responsive design elements to enhance user experience on various front-end platforms \n\n Maintained and improved front-end functionality of multiple websites through regular updates and bug fixing",
     tech: ["Next.js", "TAILWINDCSS", "FIGMA"],
     attachment: "",
     attachment2: "",
