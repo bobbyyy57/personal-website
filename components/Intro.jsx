@@ -36,7 +36,7 @@ const Intro = () => {
     };
 
     if (!animationComplete) {
-      interval = setInterval(typeText, 30); // Delay between each character
+      interval = setInterval(typeText, 23); // Delay between each character
     }
 
     return () => {
@@ -47,7 +47,7 @@ const Intro = () => {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col w-1/6 pb-[5%] max-lg:w-2/6 max-md:w-3/6 max-md:pb-[15%]">
+        <div className="flex flex-col w-1/6 pb-[5%] max-lg:w-2/6 max-md:w-3/6 max-md:pb-[30%]">
           <div className="flex justify-center">
             <div className="flex w-2/12 items-center mb-[10%]">
               <Image
