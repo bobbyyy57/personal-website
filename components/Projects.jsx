@@ -67,7 +67,7 @@ const Projects = () => {
               description="a geographic-based music-sharing web application that allows users to hear the world from another’s perspective
               "
               // Catalog special moments by linking current location to a song and sharing with world in the form of a BeatDrop
-              github="https://github.com/shahdivyank/beatdrop/blob/dev/components/View.jsx"
+              github="https://github.com/shahdivyank/beatdrop"
               figma="https://www.figma.com/file/Hwiv8KHufaQZnrn2YiJQ1y/BeatDrop?type=design&node-id=0%3A1&mode=design&t=BMWy7fTlkpNOIfjs-1"
               dev=""
               nextjs={true}
