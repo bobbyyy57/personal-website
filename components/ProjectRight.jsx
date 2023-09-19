@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 // import { BsGithub } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
-import { PiRocketLaunch } from "react-icons/pi";
 import Link from "next/link";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
@@ -67,8 +66,14 @@ const ProjectLeft = ({
                   </div>
                 </Link>
                 {dev !== "" && (
-                  <Link target="_blank" href={dev}>
-                    <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" />
+                  <Link
+                    target="_blank"
+                    href={dev}
+                    className="no-underline text-black"
+                  >
+                    <div className="duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
+                      LIVE
+                    </div>
                   </Link>
                 )}
               </div>
@@ -138,8 +143,14 @@ const ProjectLeft = ({
                   </div>
                 </Link>
                 {dev !== "" && (
-                  <Link target="_blank" href={dev}>
-                    <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" />
+                  <Link
+                    target="_blank"
+                    href={dev}
+                    className="no-underline text-black w-full"
+                  >
+                    <div className="duration-300 text-center hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
+                      LIVE
+                    </div>{" "}
                   </Link>
                 )}
               </div>

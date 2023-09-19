@@ -4,8 +4,10 @@ import RParts from "../public/rparts.png";
 import RPartsLogo from "../public/rpartsLogo.png";
 import beatdropLogo from "../public/beatdropLogo.png";
 import novoLogo from "../public/novoLogo.png";
+import kaboLogo from "../public/kaboLogo.png";
 import ProjectLeft from "./ProjectLeft";
 import novo from "../public/novo.png";
+import kabo from "../public/kabo.png";
 import beatdrop from "../public/beatdrop.png";
 import ProjectRight from "./ProjectRight";
 import Overtime from "../public/overtime2.png";
@@ -38,18 +40,30 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full space-y-[5%]">
             <ProjectLeft
+              logo={kaboLogo}
+              screenshot={kabo}
+              description="a web design and development studio based in California that values the importance of creativity, innovation, and community"
+              github="https://github.com/msclal/KABO"
+              figma="https://www.figma.com/file/xgqfSJOR6IuCUSpHQSDY9x/KABO-Website?type=design&node-id=0-1&mode=design&t=cQm7tqVKDvm38T4K-0"
+              dev="https://kabostudio.vercel.app"
+              nextjs={true}
+              fig={true}
+              mongo={false}
+              role="Co-Founder, Developer, Designer"
+            />
+            <ProjectRight
               logo={novoLogo}
               screenshot={novo}
               description="a dating app focused on fostering connections with individuals seeking new experiences. Share what you want to experience and connect with others who want to do the same."
               github="https://github.com/bobbyyy57/NOVO"
-              figma="https://www.figma.com/file/lvAoZ2MpsxWq7zUQ1TSaMk/NOVO?type=design&node-id=0%3A1&mode=design&t=6xgQuQln9pu6vojn-1"
+              figma="https://www.figma.com/file/xgqfSJOR6IuCUSpHQSDY9x/KABO-Website?type=design&node-id=0-1&mode=design&t=cQm7tqVKDvm38T4K-0"
               dev=""
               nextjs={true}
               fig={true}
-              mongo={true}
+              mongo={false}
               role="Developer, Designer, Product Manager"
             />
-            <ProjectRight
+            <ProjectLeft
               logo={RPartsLogo}
               screenshot={RParts}
               description="a student-based second-hand marketplace for engineering students at UC Riverside. Actively decreasing student fees and assisting those who are aiming to learn, grow, and push limits."
@@ -61,7 +75,7 @@ const Projects = () => {
               mongo={false}
               role="Developer & Designer"
             />
-            <ProjectLeft
+            <ProjectRight
               logo={beatdropLogo}
               screenshot={beatdrop}
               description="a geographic-based music-sharing web application that allows users to hear the world from another’s perspective
