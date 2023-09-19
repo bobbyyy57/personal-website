@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 // import { BsGithub } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
-import { PiRocketLaunch } from "react-icons/pi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
 import Link from "next/link";
@@ -32,12 +31,12 @@ const ProjectLeft = ({
         </div>
         <div className="w-1/2 border rounded-r-xl flex flex-col justify-center items-center">
           <div className="px-[8%] space-y-[2%]">
-            <div className="w-5/12">
+            <div className="w-5/12 py-2">
               <Image
                 src={logo}
                 alt="Landing"
                 layout="responsive"
-                className="md:-ml-3"
+                className=""
               />
             </div>
             <div className="font-outfit font-extralight text-bob-borderGray text-xs">
@@ -59,20 +58,28 @@ const ProjectLeft = ({
                     GITHUB
                   </div>
                 </Link>
-                <Link
-                  target="_blank"
-                  href={figma}
-                  className="no-underline text-black"
-                >
-                  {/* <FaFigma className="duration-300 hover:-translate-y-1 text-black" /> */}
+                {figma !== "" && (
+                  <Link
+                    target="_blank"
+                    href={figma}
+                    className="no-underline text-black"
+                  >
+                    {/* <FaFigma className="duration-300 hover:-translate-y-1 text-black" /> */}
 
-                  <div className="duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
-                    FIGMA
-                  </div>
-                </Link>
+                    <div className="duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
+                      FIGMA
+                    </div>
+                  </Link>
+                )}
                 {dev !== "" && (
-                  <Link target="_blank" href={dev}>
-                    {/* <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" /> */}
+                  <Link
+                    target="_blank"
+                    href={dev}
+                    className="no-underline text-black"
+                  >
+                    <div className="duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
+                      LIVE
+                    </div>
                   </Link>
                 )}
               </div>
@@ -139,8 +146,14 @@ const ProjectLeft = ({
                   </div>
                 </Link>
                 {dev !== "" && (
-                  <Link target="_blank" href={dev}>
-                    <PiRocketLaunch className="duration-300 hover:-translate-y-1 text-black" />
+                  <Link
+                    target="_blank"
+                    href={dev}
+                    className="no-underline text-black w-full"
+                  >
+                    <div className="text-center duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
+                      LIVE
+                    </div>
                   </Link>
                 )}
               </div>
