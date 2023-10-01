@@ -45,7 +45,7 @@ const Projects = () => {
               description="a web design and development studio based in California that values the importance of creativity, innovation, and community"
               github="https://github.com/msclal/KABO"
               figma="https://www.figma.com/file/xgqfSJOR6IuCUSpHQSDY9x/KABO-Website?type=design&node-id=0-1&mode=design&t=cQm7tqVKDvm38T4K-0"
-              dev="https://kabostudio.vercel.app"
+              dev=""
               nextjs={true}
               fig={true}
               mongo={false}
