@@ -13,7 +13,13 @@ const info = [
     role: "CO-FOUNDER | WEB DEVELOPER & UI/UX DESIGNER",
     description:
       "Managed 2+ freelance projects from client communication and project estimation to delivery, maintaining a high level of client satisfaction while boosting business’ online presence by 50% \n\n Created wireframes, prototypes, and mockups using Figma to visualize design concepts and workflow \n\n Collaborated with clients to understand their specific requirements, translating them into functional website designs and features using Next.js and TailwindCSS",
-    tech: ["NEXT.JS", "TAILWINDCSS", "FIGMA"],
+    tech: [
+      "PRODUCT MANAGEMENT",
+      "CLIENT RELATIONS",
+      "NEXT.JS",
+      "TAILWINDCSS",
+      "FIGMA",
+    ],
     attachment: "",
     attachment2: "",
   },
