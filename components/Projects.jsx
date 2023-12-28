@@ -2,12 +2,14 @@
 import React from "react";
 import RParts from "../public/rparts.png";
 import RPartsLogo from "../public/rpartsLogo.png";
+import BelowZero from "../public/belowzero.png";
 import beatdropLogo from "../public/beatdropLogo.png";
 import novoLogo from "../public/novoLogo.png";
-import kaboLogo from "../public/kaboLogo.png";
+import belowzeroLogo from "../public/belowzerologo.png";
+// import kaboLogo from "../public/kaboLogo.png";
 import ProjectLeft from "./ProjectLeft";
 import novo from "../public/novo.png";
-import kabo from "../public/kabo.png";
+// import kabo from "../public/kabo.png";
 import beatdrop from "../public/beatdrop.png";
 import ProjectRight from "./ProjectRight";
 import Overtime from "../public/overtime2.png";
@@ -40,6 +42,30 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full space-y-[5%]">
             <ProjectLeft
+              logo={RPartsLogo}
+              screenshot={RParts}
+              description="a student-based second-hand marketplace for engineering students at UC Riverside. Actively decreasing student fees and assisting those who are aiming to learn, grow, and push limits."
+              github="https://github.com/shahdivyank/r-parts"
+              figma="https://www.figma.com/file/wecb185mWk9vv38hyGGbDF/R'Parts?type=design&node-id=1238%3A67377&mode=design&t=eDfLCm7jDnS4mu0U-1"
+              dev=""
+              nextjs={true}
+              fig={true}
+              mongo={false}
+              role="Developer & Designer"
+            />
+            <ProjectRight
+              logo={belowzeroLogo}
+              screenshot={BelowZero}
+              description="Below Zero: Shaved Ice stands for quality, values and the charm that only a family business can provide for 12 years. Freelance Client.  "
+              github=""
+              figma="https://www.figma.com/proto/mZ3EwlKtkKfNLlq4I83yHe/BelowZero?page-id=0%3A1&type=design&node-id=255-1737&viewport=1056%2C-12407%2C0.49&t=c6xhWxUHiGpgenwf-1&scaling=min-zoom&starting-point-node-id=255%3A1737&show-proto-sidebar=1&mode=design"
+              dev=""
+              nextjs={true}
+              fig={true}
+              mongo={false}
+              role="Developer & Designer"
+            />
+            {/* <ProjectLeft
               logo={kaboLogo}
               screenshot={kabo}
               description="a web design and development studio based in California that values the importance of creativity, innovation, and community"
@@ -50,11 +76,11 @@ const Projects = () => {
               fig={true}
               mongo={false}
               role="Co-Founder, Developer, Designer"
-            />
-            <ProjectRight
+            /> */}
+            <ProjectLeft
               logo={novoLogo}
               screenshot={novo}
-              description="a dating app focused on fostering connections with individuals seeking new experiences. Share what you want to experience and connect with others who want to do the same."
+              description="a dating app focused on fostering connections with individuals seeking new experiences."
               github="https://github.com/bobbyyy57/NOVO"
               figma="https://www.figma.com/file/xgqfSJOR6IuCUSpHQSDY9x/KABO-Website?type=design&node-id=0-1&mode=design&t=cQm7tqVKDvm38T4K-0"
               dev=""
@@ -62,18 +88,6 @@ const Projects = () => {
               fig={true}
               mongo={false}
               role="Developer, Designer, Product Manager"
-            />
-            <ProjectLeft
-              logo={RPartsLogo}
-              screenshot={RParts}
-              description="a student-based second-hand marketplace for engineering students at UC Riverside. Actively decreasing student fees and assisting those who are aiming to learn, grow, and push limits."
-              github="https://github.com/shahdivyank/r-parts"
-              figma="https://www.figma.com/file/wecb185mWk9vv38hyGGbDF/R'Parts?type=design&node-id=0%3A1&mode=design&t=yHlFI64EB79R1hvM-1"
-              dev=""
-              nextjs={true}
-              fig={true}
-              mongo={false}
-              role="Developer & Designer"
             />
             <ProjectRight
               logo={beatdropLogo}

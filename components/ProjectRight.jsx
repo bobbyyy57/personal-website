@@ -27,10 +27,11 @@ const ProjectLeft = ({
               <Image
                 src={logo}
                 alt="Landing"
-                layout="responsive"
+                // layout="responsive"
                 className=""
               />
             </div>
+
             <div className="font-outfit font-extralight text-bob-borderGray text-xs text-right">
               {description}
             </div>
@@ -44,16 +45,18 @@ const ProjectLeft = ({
                 {mongo && <SiMongodb />}
               </div>
               <div className=" w-fit space-x-2 flex ">
-                <Link
-                  target="_blank"
-                  href={github}
-                  className="no-underline text-black"
-                >
-                  {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
-                  <div className="duration-300 hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
-                    GITHUB
-                  </div>
-                </Link>
+                {github !== "" && (
+                  <Link
+                    target="_blank"
+                    href={github}
+                    className="no-underline text-black"
+                  >
+                    {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
+                    <div className="duration-300 hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
+                      GITHUB
+                    </div>
+                  </Link>
+                )}
                 <Link
                   target="_blank"
                   href={figma}
@@ -84,7 +87,7 @@ const ProjectLeft = ({
           <Image
             src={screenshot}
             alt="Landing"
-            layout="responsive"
+            // layout="responsive"
             className="rounded-r-xl"
           />
         </div>
@@ -94,7 +97,7 @@ const ProjectLeft = ({
           <Image
             src={screenshot}
             alt="Landing"
-            layout="responsive"
+            // layout="responsive"
             className="rounded-t-xl"
           />
         </div>
@@ -104,9 +107,10 @@ const ProjectLeft = ({
               <Image
                 src={logo}
                 alt="Landing"
-                layout="responsive"
+                // layout="responsive"
                 className=""
               />
+              {/* <div className="bg-red-500">IN PROGRESS</div> */}
             </div>
             <div className="text-center font-outfit font-extralight text-bob-borderGray text-xs">
               {description}
@@ -121,27 +125,31 @@ const ProjectLeft = ({
             </div>
             <div className="flex justify-center text-xl max-lg:pb-4  w-full">
               <div className=" w-full  space-x-2 flex">
-                <Link
-                  target="_blank"
-                  href={github}
-                  className="no-underline text-black  w-full"
-                >
-                  {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
-                  <div className="duration-300 text-center hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
-                    GITHUB
-                  </div>
-                </Link>
-                <Link
-                  target="_blank"
-                  href={figma}
-                  className="no-underline text-black w-full"
-                >
-                  {/* <FaFigma className="duration-300 hover:-translate-y-1 text-black" /> */}
+                {github !== "" && (
+                  <Link
+                    target="_blank"
+                    href={github}
+                    className="no-underline text-black  w-full"
+                  >
+                    {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
+                    <div className="duration-300 text-center hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
+                      GITHUB
+                    </div>
+                  </Link>
+                )}
+                {figma !== "" && (
+                  <Link
+                    target="_blank"
+                    href={figma}
+                    className="no-underline text-black w-full"
+                  >
+                    {/* <FaFigma className="duration-300 hover:-translate-y-1 text-black" /> */}
 
-                  <div className="text-center duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
-                    FIGMA
-                  </div>
-                </Link>
+                    <div className="text-center duration-300 hover:-translate-y-1 text-xs border hover:bg-black hover:text-white hover:border-none rounded-full font-outfit px-2 py-1">
+                      FIGMA
+                    </div>
+                  </Link>
+                )}
                 {dev !== "" && (
                   <Link
                     target="_blank"

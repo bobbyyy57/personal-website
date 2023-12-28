@@ -7,6 +7,17 @@ import { motion } from "framer-motion";
 
 const info = [
   {
+    logo: "/splogo.png",
+    company: "Springboard",
+    date: "NOVEMBER 2023 - PRESENT",
+    role: "UI/UX DESIGN STUDENT",
+    description:
+      "Completing 700+ hours of hands-on coursework, with 1:1 expert mentor oversight, and completion of 4 in-depth portfolio projects. \n\n Mastering skills in information architecture, sketching and wireframing, prototyping and testing, eCommerce and browsing, persuasive and anticipatory design, gamification and behavior change, dashboards and data design, social media and messaging, and product lifecycle. \n\n",
+    tech: ["FIGMA", "PROTOTYPING", "WIREFRAMING", "RESEARCH"],
+    attachment: "",
+    attachment2: "",
+  },
+  {
     logo: "/kaboLogo2.png",
     company: "KABO! Studio",
     date: "AUGUST 2023 - PRESENT",

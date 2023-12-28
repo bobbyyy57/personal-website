@@ -25,7 +25,7 @@ const ProjectLeft = ({
           <Image
             src={screenshot}
             alt="Landing"
-            layout="responsive"
+            // layout="responsive"
             className="rounded-l-xl"
           />
         </div>
@@ -35,7 +35,7 @@ const ProjectLeft = ({
               <Image
                 src={logo}
                 alt="Landing"
-                layout="responsive"
+                // layout="responsive"
                 className=""
               />
             </div>
@@ -48,16 +48,18 @@ const ProjectLeft = ({
 
             <div className="flex justify-between text-xl pt-4 pb-3 max-lg:pb-3 max-md:bg-red-500">
               <div className=" w-fit space-x-2 flex">
-                <Link
-                  target="_blank"
-                  href={github}
-                  className="no-underline text-black"
-                >
-                  {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
-                  <div className="duration-300 hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
-                    GITHUB
-                  </div>
-                </Link>
+                {github !== "" && (
+                  <Link
+                    target="_blank"
+                    href={github}
+                    className="no-underline text-black"
+                  >
+                    {/* <BsGithub className="duration-300 hover:-translate-y-1 text-black" /> */}
+                    <div className="duration-300 hover:-translate-y-1 hover:bg-black hover:text-white text-xs  hover:border-none border rounded-full font-outfit px-2 py-1">
+                      GITHUB
+                    </div>
+                  </Link>
+                )}
                 {figma !== "" && (
                   <Link
                     target="_blank"
@@ -97,7 +99,7 @@ const ProjectLeft = ({
           <Image
             src={screenshot}
             alt="Landing"
-            layout="responsive"
+            // layout="responsive"
             className="rounded-t-xl"
           />
         </div>
@@ -107,7 +109,7 @@ const ProjectLeft = ({
               <Image
                 src={logo}
                 alt="Landing"
-                layout="responsive"
+                // layout="responsive"
                 className=""
               />
             </div>
