@@ -7,13 +7,30 @@ import { motion } from "framer-motion";
 
 const info = [
   {
+    logo: "/splogo.png",
+    company: "Springboard",
+    date: "NOVEMBER 2023 - PRESENT",
+    role: "UI/UX DESIGN STUDENT",
+    description:
+      "Completing 700+ hours of hands-on coursework, with 1:1 expert mentor oversight, and completion of 4 in-depth portfolio projects. \n\n Mastering skills in information architecture, sketching and wireframing, prototyping and testing, eCommerce and browsing, persuasive and anticipatory design, gamification and behavior change, dashboards and data design, social media and messaging, and product lifecycle. \n\n",
+    tech: ["FIGMA", "PROTOTYPING", "WIREFRAMING", "RESEARCH"],
+    attachment: "",
+    attachment2: "",
+  },
+  {
     logo: "/kaboLogo2.png",
     company: "KABO! Studio",
     date: "AUGUST 2023 - PRESENT",
     role: "CO-FOUNDER | WEB DEVELOPER & UI/UX DESIGNER",
     description:
       "Managed 2+ freelance projects from client communication and project estimation to delivery, maintaining a high level of client satisfaction while boosting business’ online presence by 50% \n\n Created wireframes, prototypes, and mockups using Figma to visualize design concepts and workflow \n\n Collaborated with clients to understand their specific requirements, translating them into functional website designs and features using Next.js and TailwindCSS",
-    tech: ["NEXT.JS", "TAILWINDCSS", "FIGMA"],
+    tech: [
+      "PRODUCT MANAGEMENT",
+      "CLIENT RELATIONS",
+      "NEXT.JS",
+      "TAILWINDCSS",
+      "FIGMA",
+    ],
     attachment: "",
     attachment2: "",
   },
